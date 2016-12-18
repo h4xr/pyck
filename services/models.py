@@ -13,7 +13,7 @@ class ServiceData(models.Model):
 
     pincode = models.PositiveIntegerField()
     company_name = models.CharField(max_length=50)
-    money_limit = models.PositiveIntegerField(default=0)
+    money_limit = models.PositiveIntegerField(default=99999999)
     priority = models.IntegerField(default=0)
 
     def __unicode__(self):
